@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exchange Rate App</title>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<h1 class="heading">Exchange Rate App</h1>
+			<p class="lower-title">Sprawdź aktualne kursy walut!</p>
+
+			<div class="app-body">
+				<div class="section-left">
+					<input class="inputs" type="number" id="amount-one" value="1" />
+					<select class="selects" id="currency-one">
+						<option class="options" value="USD" selected>USD</option>
+						<option class="options" value="EUR">EUR</option>
+						<option class="options" value="CHF">CHF</option>
+					</select>
+				</div>
+
+				<div class="section-right">
+					<input class="inputs" type="text" id="amount-two" disabled />
+					<span class="currency-label" id="currency-label">PLN</span>
+				</div>
+			</div>
+			<p class="rate-info"></p>
+			<button class="calculate-button" id="calculate-button">Przelicz</button>
+		</div>
+		<div id="root"></div>
+		<script src="main.js"></script>
+		<script src="dist/bundle.js"></script>
+	</body>
+</html>
