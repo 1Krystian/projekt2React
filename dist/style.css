@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	background-color: #29303b;
+}
+
+.wrapper {
+	padding: 50px;
+	width: 800px;
+	background-image: linear-gradient(#3f4b59, #333d46);
+	color: #fff;
+	text-align: center;
+	border: 1px solid #1c232d;
+	border-radius: 15px;
+	box-shadow: 0 0 15px #1c232d;
+}
+
+.wrapper .heading {
+	margin-bottom: 10px;
+	font-size: 36px;
+}
+
+.wrapper .lower-title {
+	margin-bottom: 50px;
+	font-size: 26px;
+	font-weight: 200;
+}
+
+.calculate-button {
+	padding: 10px 10px;
+	background-color: grey;
+	font-family: inherit;
+	font-size: 26px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.app-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-left,
+.section-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.app-body .inputs {
+	margin-bottom: 10px;
+	width: 100%;
+	font-size: 60px;
+}
+
+.app-body .inputs,
+.app-body .selects {
+	color: #fff;
+	border: none;
+	background: none;
+	text-align: center;
+}
+
+.app-body .selects {
+	padding: 10px 20px;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.app-body .inputs:focus,
+.app-body .selects:focus {
+	outline: none;
+	color: rgb(67, 171, 255);
+}
+
+.app-body .options {
+	color: #333;
+}
+
+.wrapper .rate-info {
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.currency-label {
+	padding: 10px 20px;
+	font-size: 36px;
+}
